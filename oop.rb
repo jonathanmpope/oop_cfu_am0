@@ -108,7 +108,7 @@ class Hobbit
     if @age >= 33 && @age < 101
       @is_adult = true
     elsif @age > 101
-      @is_old = true && @is_adult = false
+      @is_old = true && @is_adult = true 
     end
   end
 
@@ -121,3 +121,7 @@ p Hobbit_Frodo
 Hobbit_Frodo.celebrate_birthday
 Hobbit_Frodo.celebrate_birthday
 p Hobbit_Frodo
+
+Hobbit_Dan = Hobbit.new("Dan", "sunshiney", 102)
+Hobbit_Dan.age_check
+p Hobbit_Dan
